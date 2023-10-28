@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the entire content on the page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #363636;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content on the page */
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Style the label for the input field */
+label {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style the input field */
+input {
+    width: 30%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the search button */
+button {
+    display: block;
+    width: 10%;
+    padding: 0.5rem;
+    background-color: #0b7ac4;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Style the country information container */
+#countryInfo {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #000000;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* Style images within the country information */
+#countryInfo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #2ebdff; /* Change the background color on hover */
+}
