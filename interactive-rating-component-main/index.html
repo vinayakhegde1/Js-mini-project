@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:wght@100;200&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <!-- Rating Card  -->
+  <div class="container" id="activeState">
+    <img class="fa-star" src="./images/icon-star.svg" />
+    <h2>How did we do?</h2>
+
+    <p>Please let us know how we did
+      with your support request.
+      All feedback is appreciated
+      to help us improve our offering!</p>
+
+      <div class="numberContainer">
+        <input type="radio" name="score" id="one" />
+        <label class="number" for="one">1</label>
+        <input type="radio" name="score" id="two" />
+        <label class="number" for="two">2</label>
+        <input type="radio" name="score" id="three" />
+        <label class="number" for="three">3</label>
+        <input type="radio" name="score" id="four" />
+        <label class="number" for="four">4</label>
+        <input type="radio" name="score" id="five" />
+        <label class="number" for="five">5</label>
+      </div>
+
+    <button onclick="thankYouState()">SUBMIT</button>
+  </div>
+  <!-- Thank You Card  -->
+
+  <div class="container" id="thankYouState">
+    <img src="/images/illustration-thank-you.svg" width="150" />
+    <p class="score" id="score">You selected X out of 5</p>
+    <div>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+        touch!</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
