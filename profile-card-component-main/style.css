@@ -1,0 +1,113 @@
+*,::before,::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+}
+.bg-top {
+    position: absolute;
+    z-index: -100;
+    top:-50%;
+    left: -10%;
+}
+.bg-bot {
+    position: absolute;
+    z-index: -100;
+    top:50%;
+    right: -10%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 395px;
+    background-color: white;border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bg {
+    width: 100%;
+    height: 140px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-card.svg");
+}
+
+.img {
+    position: absolute;
+    left: 125px;
+    top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.resume {
+    padding-top: 75px;
+    text-align: center;
+}
+a {
+    padding-left: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(229, 23%, 23%);
+}
+a span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    padding-left: 5px;
+}
+.resume p {
+    color: hsl(227, 10%, 46%);
+    padding-top: 10px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 25px 40px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.171);
+}
+.stat div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 20px;
+    color: hsl(229, 23%, 23%);
+}
+.stat p {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-left: 0;
+}
