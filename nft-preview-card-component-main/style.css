@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+:root{
+--very-dark-blue-main:hsl(217, 54%, 11%);
+--very-dark-blue-card:hsl(216, 50%, 16%);
+--very-dark-blue-line:hsl(215, 32%, 27%);
+--white:hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--very-dark-blue-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.card{
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.product_img_hover{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: hsla(178, 100%, 50%,0.5);
+    padding: 130px;
+    border-radius: 10px;
+    display: none;    
+}
+
+.product:hover .product_img_hover{
+    cursor: pointer;
+    display: flex;
+}
+.title{
+    color: var(--white);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding: 25px 0px;
+}
+
+.price_days{
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.days{
+    color:hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+hr{
+    color: var(--very-dark-blue-line) ;
+}
+
+.creator{
+    padding: 15px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.creator_avatar{
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.creator_p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator_p_name{
+    color: white;
+}
+
+.creator__p__name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
